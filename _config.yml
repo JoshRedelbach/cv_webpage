@@ -2,7 +2,7 @@ title: Joshua Redelbach
 email: joshua.redelbach@t-online.de
 description: >-
   Personal website showcasing my background, skills, and projects as a Master's student in computer science.
-baseurl: "cv_webpage" # leave empty for GitHub Pages root
+baseurl: "/cv_webpage" # leave empty for GitHub Pages root
 url: ""     # set later if you use a custom domain or GitHub Pages
 
 # You don't need a theme if using custom HTML/CSS
