@@ -1,0 +1,25 @@
+title: Joshua Redelbach
+email: your.email@example.com
+description: >-
+  Personal website showcasing my background, skills, and projects as a Master's student in computer science.
+baseurl: "" # leave empty for GitHub Pages root
+url: ""     # set later if you use a custom domain or GitHub Pages
+
+# You don't need a theme if using custom HTML/CSS
+# Remove the default theme to prevent override
+# theme: minima
+
+# Optional plugins – you can remove jekyll-feed if not using posts
+plugins: []
+
+# Include folders if needed
+include:
+  - assets
+
+# Exclude generated or unused items
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
+  - vendor
