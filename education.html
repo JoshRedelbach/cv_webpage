@@ -37,7 +37,12 @@
 </section>
 
 <section class="section">
-  <button class="accordion-main-toggle"><h2>Timeline</h2></button>
+  <button class="accordion-main-toggle">
+    <span class="accordion-header">
+      <h2>Timeline</h2>
+      <i class="fas fa-chevron-down icon"></i>
+    </span>
+  </button>
   <div class="accordion-main-content">
     <div class="timeline">
 
@@ -91,11 +96,19 @@
 
 
 <section class="section">
-<button class="accordion-main-toggle"><h2>Graduated Courses</h2></button>
+<button class="accordion-main-toggle">
+  <span class="accordion-header">
+    <h2>Graduated Courses</h2>
+    <i class="fas fa-chevron-down icon"></i>
+  </span>
+</button>
 <div class="accordion-main-content">
 
   <div class="accordion">
-    <button class="accordion-toggle">Aerospace Specific</button>
+    <button class="accordion-toggle">
+      Aerospace Specific
+      <i class="fas fa-chevron-down icon"></i>
+    </button>
     <div class="accordion-content">
       <div class="interest-list">
         <li>Space Systems</li>
@@ -111,20 +124,26 @@
     </div>
   </div>
 
-    <button class="accordion-toggle">Robotics & Control</button>
-    <div class="accordion-content">
-      <div class="interest-list">
-        <li>Automation and Control Technology</li>
-        <li>Guidance Navigation and Control</li>
-        <li>Robotics 1</li>
-        <li>Robotics 2</li>
-        <li>Autonomous Mobile Systems</li>
-        <li>Photogrammetric Machine Vision</li>
+  <button class="accordion-toggle">
+    Robotics & Control
+    <i class="fas fa-chevron-down icon"></i>
+  </button>
+  <div class="accordion-content">
+    <div class="interest-list">
+      <li>Automation and Control Technology</li>
+      <li>Guidance Navigation and Control</li>
+      <li>Robotics 1</li>
+      <li>Robotics 2</li>
+      <li>Autonomous Mobile Systems</li>
+      <li>Photogrammetric Machine Vision</li>
       </ul>
     </div>
-    </div>
+  </div>
 
-    <button class="accordion-toggle">Computer Science</button>
+  <button class="accordion-toggle">
+      Computer Science
+    <i class="fas fa-chevron-down icon"></i>
+  </button>
     <div class="accordion-content">
       <div class="interest-list">
         <li>Algorithms and Data Structures</li>
@@ -171,11 +190,13 @@
 
 
 <script>
-  // Handle multiple main accordions
+  // Handle main accordions
   document.querySelectorAll('.accordion-main-toggle').forEach((button, index) => {
     button.addEventListener('click', () => {
       const content = document.querySelectorAll('.accordion-main-content')[index];
-      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+      const isVisible = content.style.display === 'block';
+      content.style.display = isVisible ? 'none' : 'block';
+      button.classList.toggle('active', !isVisible);
     });
   });
 
@@ -183,10 +204,13 @@
   document.querySelectorAll('.accordion-toggle').forEach(button => {
     button.addEventListener('click', () => {
       const content = button.nextElementSibling;
-      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+      const isVisible = content.style.display === 'block';
+      content.style.display = isVisible ? 'none' : 'block';
+      button.classList.toggle('active', !isVisible);
     });
   });
 </script>
+
 
 
 </body>

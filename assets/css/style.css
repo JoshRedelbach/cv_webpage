@@ -427,9 +427,9 @@ footer .copyright {
   transition: background-color 0.3s ease;
 }
 
-.accordion-toggle:hover {
+/* .accordion-toggle:hover {
   background-color: #fcd2ad;
-}
+} */
 
 .accordion-content {
   display: none;
@@ -446,10 +446,20 @@ footer .copyright {
   margin: 0;
 }
 
+.accordion-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.accordion-header h2 {
+  margin: 0;
+}
 
 
 .accordion-main-toggle {
-  background-color: var(--hero-bg);
+  background-color: var(--muted);
   border: none;
   padding: 14px 24px;
   width: 100%;
@@ -497,3 +507,14 @@ footer .copyright {
   margin: 0;
 }
 
+.accordion-main-toggle .icon,
+.accordion-toggle .icon {
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+/* Rotate when active */
+.accordion-main-toggle.active .icon,
+.accordion-toggle.active .icon {
+  transform: rotate(180deg);
+}
