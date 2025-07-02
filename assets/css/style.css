@@ -9,6 +9,7 @@
   --underline: #fcd5b5;
   --card-bg: #ffffff;
   --button-hover: #333333;
+  --accordion-bg: #f7f6ef;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
@@ -459,7 +460,7 @@ footer .copyright {
 
 
 .accordion-main-toggle {
-  background-color: var(--muted);
+  background-color: var(--accordion-bg);
   border: none;
   padding: 14px 24px;
   width: 100%;
