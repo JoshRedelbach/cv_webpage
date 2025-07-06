@@ -36,6 +36,91 @@
 </section>
 
 
+
+
+
+<section class="section">
+  <!-- <h2>Projects</h2> -->
+  <div class="projects-grid">
+  
+
+    <div class="project-card">
+      <img src="{{ site.baseurl }}/assets/images/Bachelor_thumbnail.png" alt="Thesis Thumbnail">
+      <h3>Bachelor Thesis: Visual Servoing</h3>
+      <p>Title: <em>Analysis of Feature Detection and Matching Algorithms for Absolute Visual Servoing</em></p>
+      <p>The Zentrum für Telematik e.V. develops an approach called Absolute Visual Servoing (AVS) that enables precise pointing of a satellite towards a specific location on Earth by determining the absolute attitude and position based on the image data of an onboard camera. Two important procedures during AVS are the feature detection, description and matching performed onboard the satellite, as well as the creation of a database containing Ground Control Points in advance. Within this thesis, state-of-the-art algorithms for feature detection, description and matching are analyzed and the applicability of these processes regarding AVS is investigated.</p>
+      <div class="project-links">
+        <a href="{{ site.baseurl }}/assets/docs/bachelor_thesis.pdf" target="_blank"><i class="fas fa-file"></i> Thesis PDF</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="{{ site.baseurl }}/assets/images/internship_thumbnail.png" alt="Internship Thumbnail">
+      <h3>Internship: Visual Servoing</h3>
+      <p>Title: <em>Prototype Implementation of Image-Based Attitude and Position Determination for Absolute Visual Servoing</em></p>
+      <p>Based on my Bachelor Thesis, within this internship a pipeline for the entire process of onboard feature matching and the subsequent image-based attitude and position determination for Absolute Visual Servoing (AVS) was implemented and tested. It was intended to show the applicability of the approach of AVS and to provide a possible conﬁguration of the onboard pipeline and of the creation of the database as a basis for the design and concrete implementation of the ADCS in future missions.</p>
+      <div class="project-links">
+        <a href="{{ site.baseurl }}/assets/docs/Internship_Report.pdf" target="_blank"><i class="fas fa-file"></i> Report </a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="{{ site.baseurl }}/assets/images/autsys_thumbnail.png" alt="AutSys Thumbnail">
+      <h3>Extended Kalman Filter for Localization</h3>
+      <p>The goal of this group project within the course <em>Autonomous Systems</em> was to develop an Exetended Kalman Filter (EKF) for localizing a TurtleBot 3 within a 2D grid map. This was done by fusing odometry data, LiDAR scan matching and image-based relative pose estimates. To attack issues of the EKF such as fixing a bad initial state estimate or the kidnapping problem, different routines were added, e.g. adapting the GO-ICP algorithm for scan matching. The project was implement in Python and ROS 1.</p>
+      <div class="project-links">
+        <a href="{{ site.baseurl }}/assets/docs/EKF_Localization_Report.pdf" target="_blank"><i class="fa-solid fa-file"></i> Report</a>
+        <a href="https://github.com/JoshRedelbach/AutSys_EKF_Localization" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+    </div>
+
+
+    <div class="project-card">
+      <img src="{{ site.baseurl }}/assets/images/space_launcher_thumbnail.jpg" alt="Space Launcher Thumbnail" style="width: 70%; height: auto; display: block; margin: 0 auto;">
+      <h3>Gravity-turn with Atmosphere</h3>
+      <p>This group project discusses the optimization of the kick angle during a gravity turn maneuver for a two stage rocket orbital injection, aiming to minimize the total amount of needed propellant. Losses due to gravity and aerodynamic drag are considered. The mission profile analyzed includes vertical lift-off, gravity turn maneuver, coasting phase and orbit injection. Two approaches for orbit injection into a circular orbit are analyzed: single burn and double burn. Results of the developed software are provided and compared to a real case scenario. My main task was to implement the entire simulations for the trajectory optimization which was done in Python.</p>
+      <div class="project-links">
+        <a href="{{ site.baseurl }}/assets/docs/Space_Launcher_Report.pdf" target="_blank"><i class="fa-solid fa-file"></i> Report</a>
+        <a href="https://github.com/JoshRedelbach/gravity_turn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+    </div>
+
+
+    <div class="project-card">
+      <img src="{{ site.baseurl }}/assets/images/smad_thumbnail.png" alt="SMAD Thumbnail">
+      <h3>Space Mission Analysis and Design</h3>
+      <p>The goal of this group project was to analyze and design a space mission to Saturn. My main work focussed on optimizing the interplanetary trajectory from Earth to Saturn performing a flyby-maneuver around Jupiter as well as the re-entry trajectory at Saturn. This was done my implementing trajectory simulations in Python.</p>
+      <div class="project-links">
+        <a href="{{ site.baseurl }}/assets/docs/SMAD_Report.pdf" target="_blank"><i class="fa-solid fa-file"></i> Report</a>
+        <a href="https://github.com/JoshRedelbach/smad_trajectory" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="{{ site.baseurl }}/assets/images/NLP_thumbnail.png" alt="NLP Thumbnail" style="width: 90%; height: auto; display: block; margin: 0 auto;">
+      <h3>Finding the Genre of Movie Plots</h3>
+      <p>This group project in the course <em>Natural Language Processing</em> had the goal to estimate a film’s genre using its plot, title, country of origin, and director. A combination of a transformer model and a Support Vector Classifier was designed and implemented in Python to perform this task.</p>
+      <div class="project-links">
+        <a href="{{ site.baseurl }}/assets/docs/NLP_Project_Report.pdf" target="_blank"><i class="fa-solid fa-file"></i> Report</a>
+        <a href="https://github.com/JoshRedelbach/NLP_Genre_Classification" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+    </div>
+
+    <!-- Add more project-card blocks here -->
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
 <!-- Contact Section -->
 <section id="contact" class="section">
   <h2>Contact</h2>
