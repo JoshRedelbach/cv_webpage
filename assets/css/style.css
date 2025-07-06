@@ -636,3 +636,38 @@ footer .copyright {
 .project-links a i {
   margin-right: 6px;
 }
+
+
+
+@media (max-width: 600px) {
+  .hero-grid {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero-icon {
+    font-size: 80px;
+    margin-top: 20px;
+  }
+
+  .accordion-main-toggle {
+    font-size: 1.2rem;
+    padding: 12px 16px;
+  }
+
+  .accordion-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .timeline-content h3 {
+    font-size: 1rem;
+  }
+
+  .timeline-content p {
+    font-size: 0.95rem;
+  }
+}
