@@ -21,10 +21,10 @@
   --underline: #C5283D;
   --card-bg: #ffffff;
   --button-hover: #333333;
-  --accordion-bg: #F5ECD5;
-  --accordion-bg-item: #FFFAEC;
+  --accordion-bg: #F5ECD590;
+  --accordion-bg-item: #F5ECD550;
   --timeline-marker: #000000;
-  --accordion-toggle: #FFFAEC;
+  --accordion-toggle: #F5ECD550;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
@@ -84,7 +84,8 @@ a:hover {
   font-size: 3rem;
   font-weight: 800;
   margin-bottom: 20px;
-  color: white;
+  /* color: white; */
+  color: #F5ECD5;
 }
 
 .hero-text p {
@@ -266,7 +267,7 @@ footer .copyright {
   position: relative;
   display: inline-block;
   z-index: 1;
-  color: white;
+  color: #F5ECD5;;
 }
 
 .underline::after {
@@ -378,6 +379,7 @@ footer .copyright {
   box-shadow: 0 4px 8px rgba(0,0,0,0.06);
   border-left: 4px solid #222;
 } */
+
  .timeline {
   position: relative;
   margin-left: 20px;
@@ -427,6 +429,7 @@ footer .copyright {
   padding: 16px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  
 }
 
 .timeline-content h3 {
@@ -491,9 +494,9 @@ footer .copyright {
 .accordion-content {
   display: none;
   padding: 10px 10px;
-  border-left: 3px solid var(--accent);
+  border-left: 3px solid var(--text);
   margin-bottom: 1.2rem;
-  background-color: #fffaf7;
+  background-color: #F5ECD540;
   border-radius: 0 0 8px 8px;
 }
 
